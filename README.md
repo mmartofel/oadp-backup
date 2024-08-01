@@ -5,6 +5,8 @@
 > [!NOTE]  
 > Red Hat OpenShift Data Foundation provides you File, Block, and Object storage capabilities on Red Hat OpenShift cluster without additional software. ODF is not part of the following practice but worth rememebering for production deployments.
 
+#### Let's get it go!
+
 Once you have your OpenShift cluster ready please login with admin credentials first.
 
 Login to you desired Red Hat OpenShift cluster, for exmple:
