@@ -1,0 +1,5 @@
+resources:
+# create app-core project
+- namespace/app-core.yaml
+# create Minio S3 service
+- minio/minio.yaml
