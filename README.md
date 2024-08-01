@@ -50,3 +50,27 @@ At the OADP operator 'Backups' tab you shoud see your first backup completed:
 Backup files are located at your Minio S3 at the path backups/velero/backups/app-core-backup
 
 ![First backup at Minio S3](./images/8.png)
+
+So, we have a backup let's delete our application namespace:
+
+```
+oc delete project app-core
+```
+
+But once we have our backup we can always restore it:
+
+```
+oc apply -f ./backup-restore/app-core-restore.yaml
+```
+
+Again, heading OADP operator 'Backups' tab you shoud see your first restore completed:
+
+![First restore from Minio S3](./images/9.png)
+
+Your whole app-core namespace together with all objects persisted is back again!
+
+![All is back again](./images/10.png)
+
+Many thanks for being with me during this simple practice with OADP!
+
+
