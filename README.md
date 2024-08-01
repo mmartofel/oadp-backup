@@ -1,6 +1,9 @@
 # Red Hat OpenShift API for Data Protection
 
-### This repo is to showcase OAPD which is the simplest way to do backups at Red Hat OpenShift with Velero
+### This repo is to showcase OAPD which is the simplest way to do backups at Red Hat OpenShift with Velero and very local instance of Minio S3 to provide necessary object storage
+
+> [!NOTE]  
+> Red Hat OpenShift Data Foundation provides you File, Block, and Object storage capabilities on Red Hat OpenShift cluster without additional software. ODF is not part of the following practice but worth rememebering for production deployments.
 
 Once you have your OpenShift cluster ready please login with admin credentials first.
 
