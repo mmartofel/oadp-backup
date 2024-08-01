@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: postgres-setup-configmap
+  namespace: app-core
+data:
+ POSTGRESQL_USER: demo
+ POSTGRESQL_PASSWORD: demo
+ POSTGRESQL_DATABASE: demo

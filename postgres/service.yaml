@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: pg-service
+  namespace: app-core
+  labels:
+    app: impressive-app
+spec:
+  ports:
+  - name: 5432-tcp
+    port: 5432
+    targetPort: 5432
+  selector:
+    app: impressive-app
+  type: ClusterIP
+  sessionAffinity: None

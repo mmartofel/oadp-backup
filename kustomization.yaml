@@ -1,5 +1,11 @@
 resources:
 # create app-core project
-- namespace/app-core.yaml
+- namespace/app-core-namespace.yaml
+- namespace/minio-namespace.yaml
 # create Minio S3 service
 - minio/minio.yaml
+# create Postgres at app-core namespace
+- ./postgres/pvc.yaml
+- postgres/configmap.yaml
+- postgres/deployment.yaml
+- postgres/service.yaml
