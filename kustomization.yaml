@@ -1,11 +1,15 @@
 resources:
-# create app-core project
+# create openshift projects
 - namespace/app-core-namespace.yaml
 - namespace/minio-namespace.yaml
+# - namespace/openshift-adp-namespace.yaml
 # create Minio S3 service
 - minio/minio.yaml
 # create Postgres at app-core namespace
-- ./postgres/pvc.yaml
+- postgres/pvc.yaml
 - postgres/configmap.yaml
 - postgres/deployment.yaml
 - postgres/service.yaml
+# install required operators
+# - operators/oadp-operator.yaml
+# - operators/rhods-operator.yaml

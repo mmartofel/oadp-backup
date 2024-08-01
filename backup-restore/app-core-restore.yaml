@@ -1,0 +1,7 @@
+apiVersion: velero.io/v1
+kind: Restore
+metadata:
+  name: app-core-restore
+  namespace: openshift-adp
+spec:
+  backupName: app-core-backup
