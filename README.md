@@ -10,9 +10,17 @@ Clone this repo and create all required projects and example application to back
 ```
 oc apply -k ./
 ```
-Install OADP operator using 'Operator Hub' as shown at the picture below
+Install OADP operator using 'Operator Hub' as shown at the picture below, apply all to default settings:
 
 ![install OADP operator](./images/1.png)
+
+Installed OADP operator should successfully apear at 'openshift-adp' namespace:
+
+![installed OADP operator](./images/2.png)
+
+Open it to check provided API's:
+
+![OADP operator APIs](./images/3.png)
 
 Create Minio credentials secret and DataProtectionApplication:
 
