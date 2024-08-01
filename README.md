@@ -6,7 +6,7 @@ Login to you desired Red Hat OpenShift cluster, for exmple:
 
 `` oc login --token=sha256~[YOUR_TOKEN] --server=https://[YOUR_API_ROUTE]:6443 ``
 
-Clone this repo and create all required projects and example application to backup:
+Clone this repo and create all required projects and example application to backup which is persistent Postgres (actually there is only two namespaces named minio and app-core that hold all of this scenario):
 ```
 oc apply -k ./
 ```
@@ -63,7 +63,7 @@ But once we have our backup we can always restore it:
 oc apply -f ./backup-restore/app-core-restore.yaml
 ```
 
-Again, heading OADP operator 'Backups' tab you shoud see your first restore completed:
+Again, heading OADP operator 'Restore' tab you shoud see your first restore completed:
 
 ![First restore from Minio S3](./images/9.png)
 
