@@ -1,4 +1,6 @@
-# This repo is to showcase OAPD (Red Hat OpenShift API for Data Protection) which is the simplest way to do backups at Red Hat OpenShift using Velero
+# Red Hat OpenShift API for Data Protection
+
+### This repo is to showcase OAPD which is the simplest way to do backups at Red Hat OpenShift with Velero
 
 Once you have your OpenShift cluster ready please login with admin credentials first.
 
