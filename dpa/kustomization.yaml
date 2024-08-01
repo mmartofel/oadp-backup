@@ -1,0 +1,3 @@
+resources:
+- minio-credentials.yaml
+- dpa.yaml
