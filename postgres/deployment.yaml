@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/kuberneter-probes/tree/main/deployment/store'
+    app.openshift.io/vcs-uri: 'https://github.com/mmartofel/oadp-backup'
   labels:
     app: impressive-app
     app.kubernetes.io/component: database
