@@ -1,3 +1,4 @@
 resources:
 - minio-credentials.yaml
-- dpa.yaml
+- cloud-credentials.yaml
+- dpa-kopia.yaml
