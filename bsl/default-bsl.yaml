@@ -1,0 +1,21 @@
+apiVersion: velero.io/v1
+kind: BackupStorageLocation
+metadata:
+  name: default-bsl
+  namespace: openshift-adp
+spec:
+  accessMode: ReadWrite
+  config:
+    checksumAlgorithm: ''
+    profile: default
+    region: localstorage
+    s3ForcePathStyle: 'true'
+    s3Url: 'http://minio-service.minio.svc.cluster.local:9000/'
+  credential:
+    key: cloud
+    name: minio-credentials
+  default: true
+  objectStorage:
+    bucket: backups
+    prefix: velero
+  provider: aws
