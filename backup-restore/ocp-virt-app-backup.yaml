@@ -1,0 +1,8 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: ocp-virt-app-backup
+  namespace: openshift-adp
+spec:
+  includedNamespaces:
+    - ocp-virt-app
