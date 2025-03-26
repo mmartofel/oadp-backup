@@ -37,7 +37,7 @@ Login to your newly created Minio S3 (user: minio password: minio123) and create
 Create Minio credentials secret and DataProtectionApplication:
 
 ```
-oc apply -k ./adp
+oc apply -k ./dpa
 ```
 
 Check objects created at OADP operator 'All instances' tab:
